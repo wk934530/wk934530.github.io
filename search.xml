@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>新手CentOS6 配置 静态ip地址</title>
+      <link href="2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/"/>
+      <url>2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><font color=#999AAA >以CentOS6 VMware 15.5.0为基础</font></p><hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1"><h1 id="一、CentOS6的安装（略）"><a href="#一、CentOS6的安装（略）" class="headerlink" title="一、CentOS6的安装（略）"></a>一、CentOS6的安装（略）</h1><p>可以参考此文章 <a href="https://www.jianshu.com/p/dca2d94dc1ab">简书-Y先生的领地CentOS6.5系统安装</a><br>或者自行百度CentOS6的安装</p><h1 id="二、设置静态ip地址"><a href="#二、设置静态ip地址" class="headerlink" title="二、设置静态ip地址"></a>二、设置静态ip地址</h1><h2 id="1-物理机和vm的设置"><a href="#1-物理机和vm的设置" class="headerlink" title="1.物理机和vm的设置"></a>1.物理机和vm的设置</h2><p><strong>1.1</strong> vm客户端的编辑：</p><p><img src="https://i.loli.net/2021/01/20/uJiwnkEjK3M8HfV.jpg"></p><p><img src="https://img-blog.csdnimg.cn/20201024124508775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201024124855655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><strong>1.12</strong> 物理机网络配置：<br>打开控制面板 》网络和Internet 》网络连接<br><strong>注：虚拟机的ip地址下面地址要同一个网段</strong><br><img src="https://img-blog.csdnimg.cn/20201024132432665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h2 id="2-centos6配置ip地址"><a href="#2-centos6配置ip地址" class="headerlink" title="2.centos6配置ip地址"></a>2.centos6配置ip地址</h2><p><strong>2.1 <font color=#999AAA >代码如下：</strong></p><pre class=" language-powershell"><code class="language-powershell">vim <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>network<span class="token operator">-</span>scripts<span class="token operator">/</span>ifcfg<span class="token operator">-</span>eth0</code></pre><pre class=" language-powershell"><code class="language-powershell">静态网络设定：DEVICE=eth0ONBOOT=no    <span class="token comment" spellcheck="true">#修改为yes</span>IPADDR=192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>xx<span class="token punctuation">.</span>xx    <span class="token comment" spellcheck="true">#增加这一行,与上面地址为同一个网段，最后以为尽量大于129</span>NETMASK=255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>0BOOTPROTO=none    <span class="token comment" spellcheck="true">#修改为static</span>GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>XX<span class="token punctuation">.</span>XX    <span class="token comment" spellcheck="true">#NAT设置里面的网关ip一致</span></code></pre><p><img src="https://img-blog.csdnimg.cn/20201024134949376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><p>  注：按i进入编辑，wq保存<br><strong>2.2 保存退出后执行以下命令，网卡重启</strong></p><pre class=" language-powershell"><code class="language-powershell">service network restert</code></pre><p><img src="https://img-blog.csdnimg.cn/20201024140138945.png#pic_center" alt="在这里插入图片描述"><br><strong>2.3查看ip地址是否修改成功</strong></p><pre class=" language-powershell"><code class="language-powershell">ifconfig</code></pre><p><img src="https://img-blog.csdnimg.cn/20201024140947344.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>注：若int addr（圈红地方）地址还是为127.0.0.1   应该重启网卡就能解决<br><strong>2.4 修改 主机名与ip地址的映射关系</strong></p><pre class=" language-powershell"><code class="language-powershell">vim <span class="token operator">/</span>etc<span class="token operator">/</span>hosts</code></pre><p><img src="https://img-blog.csdnimg.cn/20201024142625465.png#pic_center" alt="在这里插入图片描述"><br>注：按i键进行修改，wq保存并退出</p><p><strong>2.5 重启centos6</strong></p><pre class=" language-powershell"><code class="language-powershell">reboot</code></pre><p>注：重启系统，主机名才会生效</p><p><strong>2.6验证物理机和centos6是否互通</strong></p><pre class=" language-powershell"><code class="language-powershell">ping 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>xx<span class="token punctuation">.</span>xx <span class="token comment" spellcheck="true">#此地址为物理机网络配置地址</span></code></pre><p>此说明 centos6能通物理机<br><img src="https://img-blog.csdnimg.cn/20201024143808406.png#pic_center" alt="在这里插入图片描述"><br>此说明 物理机能centos6<br><img src="https://img-blog.csdnimg.cn/20201024144245192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> end</p><hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1"><p><font color=#999AAA >大神勿喷，若安装代码，请指正：<br>正在学习Linux操作系统的小白。如果你也是刚学习Linux的话，可以交流交流。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 静态ip地址设置 </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客</title>
+      <link href="2021/01/18/wo-de-di-yi-pian-bo-ke/"/>
+      <url>2021/01/18/wo-de-di-yi-pian-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><blockquote><p>注意下面每一个标记如果和内容同行，中间都加一个空格</p></blockquote><h1 id="我是大标题，和一级标题长得一样"><a href="#我是大标题，和一级标题长得一样" class="headerlink" title="我是大标题，和一级标题长得一样"></a>我是大标题，和一级标题长得一样</h1><h2 id="我是次级标题，和二级标题长得一样"><a href="#我是次级标题，和二级标题长得一样" class="headerlink" title="我是次级标题，和二级标题长得一样"></a>我是次级标题，和二级标题长得一样</h2><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h6 id="一直到六级标题"><a href="#一直到六级标题" class="headerlink" title="一直到六级标题"></a>一直到六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul><li>无序写法1</li></ul><ul><li>无序写法2</li></ul><ul><li>无序写法3<ul><li>嵌套加一个Tab<ul><li>再套一层<ul><li>再来</li></ul></li></ul></li></ul></li></ul><ol><li>有序列表只有这一种写法</li><li>数字加点</li></ol><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>字段1</th><th align="center">字段2</th><th align="right">字段3</th></tr></thead><tbody><tr><td>内容</td><td align="center">内容</td><td align="right">内容</td></tr><tr><td>这列左对齐</td><td align="center">这列居中</td><td align="right">这列右对齐</td></tr></tbody></table><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><hr><hr><hr><hr><hr><hr><p>注意：如果用—要和前方空行防止被当成标题符号</p><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体1</em><br><em>斜体2</em><br><strong>粗体</strong><br><strong>粗体2</strong><br><strong><em>斜粗体</em></strong><br><strong><em>斜粗体2</em></strong><br><del>删除线</del></p><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><p><a href="https://www.baidu.com"百度一下,你就知道"/">百度</a></p><h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><p>！<a href="https://baike.baidu.com/pic/Bliss/52106/0/0bd162d9f2d3572ccd5be1ec8913632762d0c341?fr=lemma&ct=single#aid=0&pic=0bd162d9f2d3572ccd5be1ec8913632762d0c341%22title%22">图片alt</a></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote><p>引用内容</p><blockquote><p>嵌套引用</p></blockquote></blockquote><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p><code>单行代码</code><br>    <code>    代码块    </code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2021/01/18/hello-world/"/>
+      <url>2021/01/18/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>北溟有鱼</title>
+  
+  <subtitle>行远自迩</subtitle>
+  <link href="https://github.com/wk934530/wk934530.github.io.git/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/wk934530/wk934530.github.io.git/"/>
+  <updated>2021-01-19T18:02:20.566Z</updated>
+  <id>https://github.com/wk934530/wk934530.github.io.git/</id>
+  
+  <author>
+    <name>唧唧歪歪</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新手CentOS6 配置 静态ip地址</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/</id>
+    <published>2021-01-20T02:21:01.000Z</published>
+    <updated>2021-01-19T18:02:20.566Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&lt;font color=#999AAA &gt;以CentOS6 VMware 15.5.0为基础&lt;/font&gt;&lt;/p&gt;
+&lt;hr style=&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/Linux/"/>
+    
+    
+    <category term="静态ip地址设置" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E8%AE%BE%E7%BD%AE/"/>
+    
+    <category term="Linux" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/18/wo-de-di-yi-pian-bo-ke/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/18/wo-de-di-yi-pian-bo-ke/</id>
+    <published>2021-01-18T02:21:01.000Z</published>
+    <updated>2021-01-18T02:22:51.273Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意下面每一个标记如果和内容同行，中间都加一个空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;我是大标题，和一级标题长得一样&quot;&gt;&lt;a href=&quot;#我是大标题，和一级标题长得一样&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/18/hello-world/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/18/hello-world/</id>
+    <published>2021-01-18T02:17:25.242Z</published>
+    <updated>2021-01-18T02:17:25.242Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

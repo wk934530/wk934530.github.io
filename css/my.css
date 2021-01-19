@@ -1,0 +1,32 @@
+/* Here is your custom css styles. */
+.uk-alert {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #ebf7fd;
+  color: #2d7091;
+  border: 1px solid rgba(45, 112, 145, 0.3);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+ 
+/* Modifier: `uk-alert-success`
+ ========================================================================== */
+.uk-alert-success {
+  background: #f2fae3;
+  color: #659f13;
+  border-color: rgba(101, 159, 19, 0.3);
+}
+/* Modifier: `uk-alert-warning`
+ ========================================================================== */
+.uk-alert-warning {
+  background: #fffceb;
+  color: #e28327;
+  border-color: rgba(226, 131, 39, 0.3);
+}
+/* Modifier: `uk-alert-danger`
+ ========================================================================== */
+.uk-alert-danger {
+  background: #fff1f0;
+  color: #d85030;
+  border-color: rgba(216, 80, 48, 0.3);
+}
