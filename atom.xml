@@ -6,7 +6,7 @@
   <link href="https://github.com/wk934530/wk934530.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/wk934530/wk934530.github.io.git/"/>
-  <updated>2021-01-19T18:02:20.566Z</updated>
+  <updated>2021-01-27T12:50:03.710Z</updated>
   <id>https://github.com/wk934530/wk934530.github.io.git/</id>
   
   <author>
@@ -17,55 +17,56 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>新手CentOS6 配置 静态ip地址</title>
-    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/"/>
-    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/</id>
-    <published>2021-01-20T02:21:01.000Z</published>
-    <updated>2021-01-19T18:02:20.566Z</updated>
+    <title>模型评估与选择</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/</id>
+    <published>2021-01-27T12:42:54.000Z</published>
+    <updated>2021-01-27T12:50:03.710Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&lt;font color=#999AAA &gt;以CentOS6 VMware 15.5.0为基础&lt;/font&gt;&lt;/p&gt;
-&lt;hr style=&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;经验误差与过拟合&quot;&gt;&lt;a href=&quot;#经验误差与过拟合&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="Linux" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/Linux/"/>
+    <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="静态ip地址设置" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E8%AE%BE%E7%BD%AE/"/>
+    <category term="机器学习-周志华" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/"/>
     
-    <category term="Linux" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/Linux/"/>
+    <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
     
   </entry>
   
   <entry>
-    <title>我的第一篇博客</title>
-    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/18/wo-de-di-yi-pian-bo-ke/"/>
-    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/18/wo-de-di-yi-pian-bo-ke/</id>
-    <published>2021-01-18T02:21:01.000Z</published>
-    <updated>2021-01-18T02:22:51.273Z</updated>
+    <title>机器学习（第一章）</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/25/test/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/25/test/</id>
+    <published>2021-01-25T12:29:44.000Z</published>
+    <updated>2021-01-27T12:41:57.756Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意下面每一个标记如果和内容同行，中间都加一个空格&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;我是大标题，和一级标题长得一样&quot;&gt;&lt;a href=&quot;#我是大标题，和一级标题长得一样&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
+    <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
+    
+    <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

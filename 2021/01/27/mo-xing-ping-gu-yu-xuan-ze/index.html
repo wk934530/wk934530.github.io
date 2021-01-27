@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="新手CentOS6 配置 静态ip地址, 北溟有鱼">
+    <meta name="keywords" content="模型评估与选择, 北溟有鱼">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>新手CentOS6 配置 静态ip地址 | 北溟有鱼</title>
+    <title>模型评估与选择 | 北溟有鱼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -289,12 +289,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">新手CentOS6 配置 静态ip地址</h1>
+                    <h1 class="description center-align post-title">模型评估与选择</h1>
                 </div>
             </div>
         </div>
@@ -410,12 +410,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E8%AE%BE%E7%BD%AE/">
-                                <span class="chip bg-color">静态ip地址设置</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                                <span class="chip bg-color">机器学习-周志华</span>
                             </a>
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -426,8 +426,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
                             </a>
                         
                     </div>
@@ -439,14 +439,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-20
+                    2021-01-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-01-20
+                    2021-01-27
                 </div>
                 
 
@@ -465,42 +465,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><font color=#999AAA >以CentOS6 VMware 15.5.0为基础</font></p>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
-
-
-<h1 id="一、CentOS6的安装（略）"><a href="#一、CentOS6的安装（略）" class="headerlink" title="一、CentOS6的安装（略）"></a>一、CentOS6的安装（略）</h1><p>可以参考此文章 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dca2d94dc1ab">简书-Y先生的领地CentOS6.5系统安装</a><br>或者自行百度CentOS6的安装</p>
-<h1 id="二、设置静态ip地址"><a href="#二、设置静态ip地址" class="headerlink" title="二、设置静态ip地址"></a>二、设置静态ip地址</h1><h2 id="1-物理机和vm的设置"><a href="#1-物理机和vm的设置" class="headerlink" title="1.物理机和vm的设置"></a>1.物理机和vm的设置</h2><p><strong>1.1</strong> vm客户端的编辑：</p>
-<p><img src="https://i.loli.net/2021/01/20/uJiwnkEjK3M8HfV.jpg"></p>
-<p><img src="https://img-blog.csdnimg.cn/20201024124508775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201024124855655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><strong>1.12</strong> 物理机网络配置：<br>打开控制面板 》网络和Internet 》网络连接<br><strong>注：虚拟机的ip地址下面地址要同一个网段</strong><br><img src="https://img-blog.csdnimg.cn/20201024132432665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="2-centos6配置ip地址"><a href="#2-centos6配置ip地址" class="headerlink" title="2.centos6配置ip地址"></a>2.centos6配置ip地址</h2><p><strong>2.1 <font color=#999AAA >代码如下：</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">vim <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>network<span class="token operator">-</span>scripts<span class="token operator">/</span>ifcfg<span class="token operator">-</span>eth0</code></pre>
-<pre class=" language-powershell"><code class="language-powershell">静态网络设定：
-DEVICE=eth0
-ONBOOT=no    <span class="token comment" spellcheck="true">#修改为yes</span>
-IPADDR=192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>xx<span class="token punctuation">.</span>xx    <span class="token comment" spellcheck="true">#增加这一行,与上面地址为同一个网段，最后以为尽量大于129</span>
-NETMASK=255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>0
-BOOTPROTO=none    <span class="token comment" spellcheck="true">#修改为static</span>
-GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>XX<span class="token punctuation">.</span>XX    <span class="token comment" spellcheck="true">#NAT设置里面的网关ip一致</span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201024134949376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>  注：按i进入编辑，wq保存<br><strong>2.2 保存退出后执行以下命令，网卡重启</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">service network restert</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201024140138945.png#pic_center" alt="在这里插入图片描述"><br><strong>2.3查看ip地址是否修改成功</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">ifconfig</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201024140947344.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>注：若int addr（圈红地方）地址还是为127.0.0.1   应该重启网卡就能解决<br><strong>2.4 修改 主机名与ip地址的映射关系</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">vim <span class="token operator">/</span>etc<span class="token operator">/</span>hosts</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201024142625465.png#pic_center" alt="在这里插入图片描述"><br>注：按i键进行修改，wq保存并退出</p>
-<p><strong>2.5 重启centos6</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">reboot</code></pre>
-<p>注：重启系统，主机名才会生效</p>
-<p><strong>2.6验证物理机和centos6是否互通</strong></p>
-<pre class=" language-powershell"><code class="language-powershell">ping 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>xx<span class="token punctuation">.</span>xx <span class="token comment" spellcheck="true">#此地址为物理机网络配置地址</span></code></pre>
-<p>此说明 centos6能通物理机<br><img src="https://img-blog.csdnimg.cn/20201024143808406.png#pic_center" alt="在这里插入图片描述"><br>此说明 物理机能centos6<br><img src="https://img-blog.csdnimg.cn/20201024144245192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3drOTM0NTMw,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> end</p>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
-<p><font color=#999AAA >大神勿喷，若安装代码，请指正：<br>正在学习Linux操作系统的小白。如果你也是刚学习Linux的话，可以交流交流。</p>
-
+                <h2 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h2>
                 
             </div>
             <hr/>
@@ -514,12 +479,12 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E8%AE%BE%E7%BD%AE/">
-                                    <span class="chip bg-color">静态ip地址设置</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                                    <span class="chip bg-color">机器学习-周志华</span>
                                 </a>
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -614,13 +579,13 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/01/20/xin-shou-centos6-an-zhuang-jing-tai-ip-di-zhi/">
+                <a href="/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="新手CentOS6 配置 静态ip地址">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="模型评估与选择">
                         
-                        <span class="card-title">新手CentOS6 配置 静态ip地址</span>
+                        <span class="card-title">模型评估与选择</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -631,14 +596,14 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    机器学习
                                 </a>
                             
                             
@@ -649,12 +614,12 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E8%AE%BE%E7%BD%AE/">
-                        <span class="chip bg-color">静态ip地址设置</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                        <span class="chip bg-color">机器学习-周志华</span>
                     </a>
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -668,13 +633,13 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/18/wo-de-di-yi-pian-bo-ke/">
+                <a href="/2021/01/25/test/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="机器学习（第一章）">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">机器学习（第一章）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -685,15 +650,31 @@ GATEWAY=192<span class="token punctuation">.</span>168<span class="token punctua
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-25
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            唧唧歪歪
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    机器学习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
+                    </a>
+                    
                 </div>
                 
             </div>
