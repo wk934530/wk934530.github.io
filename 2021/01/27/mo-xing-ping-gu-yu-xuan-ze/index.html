@@ -410,12 +410,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
-                                <span class="chip bg-color">机器学习-周志华</span>
-                            </a>
-                        
                             <a href="/tags/python/">
                                 <span class="chip bg-color">python</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                                <span class="chip bg-color">机器学习-周志华</span>
                             </a>
                         
                     </div>
@@ -465,7 +465,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h2>
+                <h2 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h2><p>错误率 = 样本分类错误 / 样本总数</p>
+<p>精度 = 1 - 错误率</p>
+<p><strong>过拟合原因</strong>：</p>
+<p>学习能力过于强大，把训练样本所包含的不太一般的特征都学到</p>
+<p><strong>欠拟合原因</strong></p>
+<p>学习能力地下  解决：决策树中扩展分支，在神经网络学习中增加训练次数</p>
+<h2 id="评估方法"><a href="#评估方法" class="headerlink" title="评估方法"></a>评估方法</h2><p><strong><em>一.流出法</em></strong></p>
+<p><strong>1、概念</strong>：留出法直接将数据集D 划分为两个互斥的部分，其中一部分作为训练集S，另一部分用作测试集T 。</p>
+<p><strong>2、方法：</strong>通常训练集和测试集的比例为70%：30%。同时，训练集测试集的划分有两个注意事项：</p>
+<p> ①尽可能保持数据分布的一致性。避免因数据划分过程引入的额外偏差而对最终结果产生影响。在分类任务中，保留类别比例的采样方法称为“分层采样”。</p>
+<p> ②采用若干次随机划分避免单次使用留出法的不稳定性。</p>
+<p><strong>3、例子：</strong></p>
+<p>D为1000样本      S包含700个样本        T包含300个样本  T中有10样本分类错误</p>
+<p>错误率为1 - （10/300）= 10%</p>
+<p>精度 1 - 10% = 90%</p>
+<blockquote>
+<p>训练 / 测试集的划分保持一致</p>
+<p>使用流出法时，采用若干次随机划分，重复进行实验评估后取平均值，作为结果</p>
+</blockquote>
+<p><strong><em>二、交叉验证法</em></strong></p>
+<p><strong>1、概念：</strong>先将数据集D划分为k个大小相似的互斥子集。每一次用k-1个子集的并集作为训练集，剩下的一个子集作为测试集；这样就可以获得k组训练/测试集，从而可进行k次训练和测试，最终返回的是这k个测试结果的均值</p>
+<p><strong>2、方法</strong></p>
+<p>①将数据集随机分为互斥的k个子集，为保证随机性，P次随机划分取平均。</p>
+<p>②将k个子集随机分为k-1个一组剩下一个为另一组，有k种分法。</p>
+<p>③将每一种分组结果中，k-1个子集的组当做训练集，另外一个当做测试集，这样就产生了k次预测，对其取平均</p>
+<p>④ 称为p次k折交叉验证，一般取k=10</p>
+<p><img src="https://www.hualigs.cn/image/60118597cb788.jpg" alt="折交叉验证示意图"></p>
+<p>3、<strong>特殊</strong></p>
+<p>留一法（LOO）</p>
+<p>​    ①假定数据集D中包含m个样本，若令k=m，则为交叉验证法的一个特例，留一法。</p>
+<p>​    ②优点：留一法不受随机样本划分方式的影响，因为m个样本只有唯一的方式划分为m个子集，即每一个子集包含一个样本；留一法使用的训练集与初始数据集相比只少了一个样本，也就是说留一法中被实际评估的模型与期望评估的用D训练出的模型很相似。</p>
+<p>​    ③缺点：在数据集比较大的时候，训练m个模型的计算开销可能是难以忍受的；留一法的估计结果也未必永远比其他评估方法准确。</p>
+
                 
             </div>
             <hr/>
@@ -479,12 +511,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
-                                    <span class="chip bg-color">机器学习-周志华</span>
-                                </a>
-                            
                                 <a href="/tags/python/">
                                     <span class="chip bg-color">python</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                                    <span class="chip bg-color">机器学习-周志华</span>
                                 </a>
                             
                         </div>
@@ -614,12 +646,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
-                        <span class="chip bg-color">机器学习-周志华</span>
-                    </a>
-                    
                     <a href="/tags/python/">
                         <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/">
+                        <span class="chip bg-color">机器学习-周志华</span>
                     </a>
                     
                 </div>
@@ -667,12 +699,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
-                    </a>
-                    
                     <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
                         <span class="chip bg-color">机器学习</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

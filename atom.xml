@@ -6,7 +6,7 @@
   <link href="https://github.com/wk934530/wk934530.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/wk934530/wk934530.github.io.git/"/>
-  <updated>2021-01-27T12:50:03.710Z</updated>
+  <updated>2021-01-27T15:35:44.377Z</updated>
   <id>https://github.com/wk934530/wk934530.github.io.git/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/"/>
     <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/</id>
     <published>2021-01-27T12:42:54.000Z</published>
-    <updated>2021-01-27T12:50:03.710Z</updated>
+    <updated>2021-01-27T15:35:44.377Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;经验误差与过拟合&quot;&gt;&lt;a href=&quot;#经验误差与过拟合&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;经验误差与过拟合&quot;&gt;&lt;a href=&quot;#经验误差与过拟合&quot; class=&quot;headerlink&quot; title=&quot;经验误差与过拟合&quot;&gt;&lt;/a&gt;经验误差与过拟合&lt;/h2&gt;&lt;p&gt;错误率 = 样本分类错误 / 样本总数&lt;/p&gt;
+&lt;p&gt;精度 = 1 -</summary>
         
       
     
@@ -37,9 +38,9 @@
     <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="机器学习-周志华" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/"/>
-    
     <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
+    
+    <category term="机器学习-周志华" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E5%91%A8%E5%BF%97%E5%8D%8E/"/>
     
   </entry>
   
@@ -64,9 +65,9 @@
     <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
-    
     <category term="机器学习" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
     
   </entry>
   
