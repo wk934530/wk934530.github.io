@@ -6,7 +6,7 @@
   <link href="https://github.com/wk934530/wk934530.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/wk934530/wk934530.github.io.git/"/>
-  <updated>2021-01-27T15:35:44.377Z</updated>
+  <updated>2021-02-05T14:54:30.327Z</updated>
   <id>https://github.com/wk934530/wk934530.github.io.git/</id>
   
   <author>
@@ -17,11 +17,86 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>模型评估与选择![微信公众号](C:/Users/13783/Desktop/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.png)</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/02/04/markdown-shi-yong-shuo-ming/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/02/04/markdown-shi-yong-shuo-ming/</id>
+    <published>2021-02-04T12:42:54.000Z</published>
+    <updated>2021-02-05T14:54:30.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Front-matter-选项详解&quot;&gt;&lt;a href=&quot;#一、Front-matter-选项详解&quot; class=&quot;headerlink&quot; title=&quot;一、Front-matter 选项详解&quot;&gt;&lt;/a&gt;一、Front-matter</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/Markdown/"/>
+    
+    
+    <category term="基本使用" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>变量和简单数据类型</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing-1/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing-1/</id>
+    <published>2021-01-28T13:23:57.000Z</published>
+    <updated>2021-01-28T13:26:24.403Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;p&gt;同时给多个变量赋值&lt;/p&gt;
+&lt;pre class=&quot; language-python&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="语言" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="python基础" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="python 树" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python-%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing/</id>
+    <published>2021-01-28T13:14:59.241Z</published>
+    <updated>2021-01-28T13:24:25.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;p&gt;同时给多个变量赋值&lt;/p&gt;
+&lt;pre class=&quot; language-python&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>模型评估与选择</title>
     <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/"/>
     <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/</id>
     <published>2021-01-27T12:42:54.000Z</published>
-    <updated>2021-01-27T15:35:44.377Z</updated>
+    <updated>2021-02-03T15:44:03.281Z</updated>
     
     
       
