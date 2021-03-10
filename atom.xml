@@ -6,7 +6,7 @@
   <link href="https://github.com/wk934530/wk934530.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/wk934530/wk934530.github.io.git/"/>
-  <updated>2021-02-05T15:58:17.761Z</updated>
+  <updated>2021-03-10T14:31:02.534Z</updated>
   <id>https://github.com/wk934530/wk934530.github.io.git/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>列表简介</title>
+    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/03/05/lie-biao-jian-jie/"/>
+    <id>https://github.com/wk934530/wk934530.github.io.git/2021/03/05/lie-biao-jian-jie/</id>
+    <published>2021-03-05T12:42:54.000Z</published>
+    <updated>2021-03-10T14:31:02.534Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;什么是列表&quot;&gt;&lt;a href=&quot;#什么是列表&quot; class=&quot;headerlink&quot; title=&quot;什么是列表&quot;&gt;&lt;/a&gt;什么是列表&lt;/h1&gt;&lt;p&gt;基本概念 ：按特定顺序排列的元素组成，可以包含字母，数字&lt;/p&gt;
+&lt;p&gt;表示方法： [ ]</summary>
+        
+      
+    
+    
+    
+    <category term="python编程从入门到实践" scheme="https://github.com/wk934530/wk934530.github.io.git/categories/python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="python" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python/"/>
+    
+    <category term="python基础" scheme="https://github.com/wk934530/wk934530.github.io.git/tags/python%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown的基本使用方法</title>
@@ -70,33 +98,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing/"/>
-    <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/28/bian-liang-he-jian-dan-shu-ju-lei-xing/</id>
-    <published>2021-01-28T13:14:59.241Z</published>
-    <updated>2021-01-28T13:24:25.728Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;p&gt;同时给多个变量赋值&lt;/p&gt;
-&lt;pre class=&quot; language-python&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>模型评估与选择</title>
     <link href="https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/"/>
     <id>https://github.com/wk934530/wk934530.github.io.git/2021/01/27/mo-xing-ping-gu-yu-xuan-ze/</id>
     <published>2021-01-27T12:42:54.000Z</published>
-    <updated>2021-02-03T15:44:03.281Z</updated>
+    <updated>2021-02-07T14:47:38.841Z</updated>
     
     
       
