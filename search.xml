@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>操作列表</title>
+      <link href="2021/03/30/cao-zuo-lie-biao/"/>
+      <url>2021/03/30/cao-zuo-lie-biao/</url>
+      
+        <content type="html"><![CDATA[<p>for 语句末尾的冒号 表示是下一行是循环的第一行</p><h3 id="在for循环中执行更多操作"><a href="#在for循环中执行更多操作" class="headerlink" title="在for循环中执行更多操作"></a>在for循环中执行更多操作</h3><pre class=" language-python"><code class="language-python">magicians <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">]</span><span class="token keyword">for</span> i <span class="token keyword">in</span> magicians<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"&amp;#123;i.title()&amp;#125;,hello"</span><span class="token punctuation">)</span><span class="token triple-quoted-string string">'''outputA,helloB,helloC,hello'''</span></code></pre><p>每个缩进的代码都是循环的一部分</p><pre class=" language-python"><code class="language-python">magicians <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">]</span><span class="token keyword">for</span> i <span class="token keyword">in</span> magicians<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"&amp;#123;i.title()&amp;#125;,hello"</span><span class="token punctuation">)</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'hi'</span><span class="token punctuation">)</span><span class="token triple-quoted-string string">'''outputA,hellohiB,hellohiC,hellohi'''</span></code></pre><p>使用迭代对象将单词分开，存入列表中</p><pre class=" language-python"><code class="language-python">list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token string">'python'</span><span class="token punctuation">:</span>    list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token triple-quoted-string string">'''output['p', 'y', 't', 'h', 'o', 'n']'''</span></code></pre><ul><li>通过for 循环实现1+2+3+········+100<pre class=" language-python"><code class="language-python">sum <span class="token operator">=</span> <span class="token number">0</span><span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  sum<span class="token operator">+=</span>i<span class="token keyword">print</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span class="token string">''</span>'output<span class="token number">4950</span></code></pre></li></ul><p>‘’’</p><pre><code>- （增加缩进）通过for 循环实现1+2+3+········+100```pythonsum = 0for i in range(100):    sum+=i    print(sum)&#39;&#39;&#39;output013610152128&#39;&#39;&#39;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> python入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 列表操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Numpy知识点</title>
       <link href="2021/03/21/numpy-zhi-shi-dian/"/>
       <url>2021/03/21/numpy-zhi-shi-dian/</url>
